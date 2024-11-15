@@ -22,6 +22,26 @@ A simple yet visually appealing Kivy and KivyMD application that converts videos
 
 ## Screenshots
 
+Here are some screenshots of the tool:
+
+## 1. Interface
+![Interface](https://raw.githubusercontent.com/davidguigui29/video_to_audio/master/screenshots/Interface.png)
+
+## 2. Selection of Video
+![Selection of Video](https://raw.githubusercontent.com/davidguigui29/video_to_audio/master/screenshots/selection-of-video.png)
+
+## 3. Select Output
+![Select Output](https://raw.githubusercontent.com/davidguigui29/video_to_audio/master/screenshots/select-output.png)
+
+## 4. Saving Progress
+![Saving Progress](https://raw.githubusercontent.com/davidguigui29/video_to_audio/master/screenshots/saving-progres.png)
+
+## 5. Conversion Success
+![Conversion Success](https://raw.githubusercontent.com/davidguigui29/video_to_audio/master/screenshots/conversion-success.png)
+
+
 
 ## License
-Specify your license here if applicable.
+
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
+
