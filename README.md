@@ -18,10 +18,10 @@ A simple yet visually appealing Kivy and KivyMD application that converts videos
 ## How to Run
 1. Clone the repository.
 2. Install dependencies using `pip install -r requirements.txt`.
-3. Run the app with `python main.py`.
+3. Run the app with `python3 main.py`.
 
 ## Screenshots
-Include screenshots showcasing the main screen, file selection, and progress visualization.
+
 
 ## License
 Specify your license here if applicable.
