@@ -1,0 +1,31 @@
+# main.kv
+<HomeScreen>:
+    BoxLayout:
+        id: layout
+        orientation: 'vertical'
+        padding: dp(20)
+        spacing: dp(20)
+
+        MDLabel:
+            text: "Video to Audio Converter"
+            halign: 'center'
+            font_style: 'H4'
+
+        MDRaisedButton:
+            text: "Select Video"
+            pos_hint: {"center_x": 0.5}
+            on_release: app.show_file_manager()
+
+        MDRaisedButton:
+            text: "Choose Output Location"
+            pos_hint: {"center_x": 0.5}
+            on_release: app.show_output_directory_dialog()
+
+        MDLabel:
+            id: progress_label
+            text: "Progress: Not started"
+            halign: 'center'
+
+        Widget:
+            size_hint_y: None
+            height: dp(20)
