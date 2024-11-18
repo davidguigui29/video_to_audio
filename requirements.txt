@@ -1,3 +1,5 @@
+asyncgui==0.6.3
+asynckivy==0.6.4
 certifi==2024.8.30
 charset-normalizer==3.4.0
 decorator==4.4.2
@@ -8,7 +10,8 @@ imageio==2.36.0
 imageio-ffmpeg==0.5.1
 Kivy==2.3.0
 Kivy-Garden==0.1.5
-kivymd==1.2.0
+kivymd @ https://github.com/kivymd/KivyMD/archive/master.zip
+materialyoucolor==2.0.9
 moviepy==1.0.3
 numpy==2.1.3
 pillow==10.4.0
