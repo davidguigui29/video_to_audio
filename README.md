@@ -27,17 +27,6 @@ Here are some screenshots of the tool:
 ## 1. Interface
 ![Interface](https://raw.githubusercontent.com/davidguigui29/video_to_audio/master/screenshots/Interface.png)
 
-## 2. Selection of Video
-![Selection of Video](https://raw.githubusercontent.com/davidguigui29/video_to_audio/master/screenshots/selection-of-video.png)
-
-## 3. Select Output
-![Select Output](https://raw.githubusercontent.com/davidguigui29/video_to_audio/master/screenshots/select-output.png)
-
-## 4. Saving Progress
-![Saving Progress](https://raw.githubusercontent.com/davidguigui29/video_to_audio/master/screenshots/saving-progres.png)
-
-## 5. Conversion Success
-![Conversion Success](https://raw.githubusercontent.com/davidguigui29/video_to_audio/master/screenshots/conversion-success.png)
 
 
 
