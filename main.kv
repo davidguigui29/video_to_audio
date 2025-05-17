@@ -1,11 +1,6 @@
-# main.kv
 <HomeScreen>:
-
-
-    
     MDBoxLayout:
         md_bg_color: app.theme_cls.secondaryContainerColor
-        #md_bg_color: app.theme_cls.backgroundColor
         id: layout
         orientation: 'vertical'
         padding: dp(20)
@@ -13,38 +8,26 @@
 
         MDTopAppBar:
             type: "small"
-            #size_hint_x: .8
-            #pos_hint: {"center_x": .5, "center_y": .5}
-
             MDTopAppBarLeadingButtonContainer:
-
                 MDActionTopAppBarButton:
                     icon: "menu"
-
             MDTopAppBarTitle:
                 text: "Video to Audio"
                 pos_hint: {"center_x": .5}
                 bold: True
-
             MDTopAppBarTrailingButtonContainer:
-
                 MDActionTopAppBarButton:
                     icon: "account-circle-outline"
 
         MDLabel:
             text: "Convert Video to Audio"
             halign: 'center'
-            #font_style: 'Display'
-            #role: "small"
             bold: True
 
         MDLabel:
-
             id: file_name
             text: "File:"
             halign: 'center'
-            #font_style: 'Display'
-            #role: "small"
             bold: True
 
         MDButton:
@@ -53,12 +36,10 @@
             shadow_color: "red"
             pos_hint: {"center_x": 0.5}
             on_release: app.show_file_manager()
-
             MDButtonIcon:
                 icon: "plus"
                 theme_icon_color: "Custom"
                 icon_color: "green"
-
             MDButtonText:
                 id: file_name_selection
                 text: "Select Video"
@@ -72,12 +53,10 @@
             shadow_color: "red"
             pos_hint: {"center_x": 0.5}
             on_release: app.show_output_directory_dialog()
-
             MDButtonIcon:
                 icon: "plus"
                 theme_icon_color: "Custom"
                 icon_color: "green"
-
             MDButtonText:
                 text: "Choose Output Location"
                 theme_text_color: "Custom"
@@ -85,26 +64,33 @@
                 bold: True
 
         MDLabel:
-
             id: output_directory_label
             text: "Output File:"
             halign: 'center'
-            #font_style: 'Display'
-            #role: "small"
             bold: True
-       
+
         MDLabel:
             id: progress_label
             text: "Progress: Not started"
             halign: 'center'
             bold: True
 
-        #MDLinearProgressIndicator:
-        #    id: progress
-        #    type: "determinate"
-        #    size_hint_x: .5
-        #    value: 50
-        #    pos_hint: {'center_x': .5, 'center_y': .4}
+        MDLinearProgressIndicator:
+            id: progress_bar
+            type: "determinate"
+            size_hint_x: .8
+            pos_hint: {'center_x': .5}
+            value: 0
+            max: 100
+            indicator_color: "blue"
+            opacity: 0  # Hide until conversion starts
+
+        MDLabel:
+            id: success_label
+            text: ""
+            markup: True
+            halign: 'center'
+            bold: True
 
         MDButton:
             id: convert_button
@@ -114,13 +100,11 @@
             shadow_color: "red"
             pos_hint: {"center_x": 0.5}
             on_release: app.start_conversion()
-
             MDButtonText:
                 text: "Convert"
                 theme_text_color: "Custom"
                 text_color: "blue"
                 bold: True
-
 
         Widget:
             size_hint_y: None

@@ -20,7 +20,7 @@ from moviepy.editor import VideoFileClip
 import os
 import threading
 
-Window.size = (400, 600)  # Set window size for desktop preview
+Window.size = (360, 600)  # Set window size for desktop preview
 
 class HomeScreen(Screen):
     pass
